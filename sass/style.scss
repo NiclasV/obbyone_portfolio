@@ -4,8 +4,7 @@ html {
 
 html,
 body {
-    
-    min-height: 1500px;
+    min-height: 1200px;
     margin: 0 auto;
     padding: 0;
     background: #FFFFFF;
@@ -37,14 +36,7 @@ p .logo {
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.6);
     max-width: 940px;
-    margin-bottom: 40px;
-    
-}
-
-nav {
-    padding: 0px;
-    margin: 0 auto;
-    max-width: 960px;
+    margin-bottom: 10px;
 }
 
 
@@ -155,6 +147,12 @@ hr {
 
 // NAVIGATION 
 
+nav {
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
 .main-navigation {
     padding: 5px 0 20px 0;
     display: flex;
@@ -200,7 +198,7 @@ hr {
 }
 
 .profilephoto {
-    background-image: url("../images/profilepic.jpg");
+    background-image: url("../images/profilepic3.jpg");
     background-size: cover;
     background-position: center;
     width: 35%;
@@ -282,7 +280,7 @@ hr {
 }
 
 .role-icon-container {
-    width: 40%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -489,7 +487,22 @@ a {
 @media screen and (max-width: 600px){
     html,
     body {
+        background: black;
         background-image: url("../images/bg-mobile.jpg");
+        padding: 5px;
+    }
+
+    .nav-left-logo {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .nav-right-menu {
+        width: 50%;
+    }
+    
+    .main-navigation {
+        justify-content: flex-start;
     }
 
     .profileinfo {
@@ -498,8 +511,11 @@ a {
     }
 
     .profilephoto {
-        width: 100%;
+        width: 75%;
         margin-bottom: 30px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .profiledetails {
@@ -508,12 +524,13 @@ a {
     }
 
     .roles {
-        font-size: 1.4em;
-        margin-bottom: 20px;
+        font-size: 1.2em;
+        margin-bottom: 40px;
+
     }
 
     .profiledetails h1 { 
-        font-size: 4.7em;
+        font-size: 4em;
     }
 
     .contact-details {
@@ -545,6 +562,10 @@ a {
         margin-bottom: 20px;
     }
 
+    .role-icon-container {
+        width: 60%;
+    }
+
     .content {
         margin-bottom: 0px;
     }
@@ -553,6 +574,7 @@ a {
         width: 100%;
         margin: 0 5px 0 5px;
     }
+
     .photogallery {
         /* Prevent vertical gaps */
       padding: 5px;
@@ -574,6 +596,11 @@ and (max-width: 992px) {
 
     .profiledetails h1 { 
         font-size: 5.6em;
+    }
+
+    .portfolio-item {
+        width: calc(100% / 2 - 10px);
+        margin: 0 5px 0 5px;
     }
 
 }
