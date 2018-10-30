@@ -238,7 +238,7 @@ displayModule = {
                 <div class="photo-wrapper">
                     <img src="${photo.url}" class="img-fluid" alt="${photo.title}">
                     <div class="photo-overlay">
-                        <div class="overlay-text"><a href="${photo.url}" target="_blank">${photo.title}</a></div>
+                        <div class="overlay-text"><a href="${photo.url}" data-lity class="litylink">${photo.title}</a></div>
                     </div>
                 </div>
                 `;
@@ -255,3 +255,11 @@ displayModule = {
 }
 
 createModule.init_()
+
+//LITY POP-UP THING
+const litylink = document.getElementsByClassName('litylink');
+for ( let i = 0; i < litylink.length; i++ ) {
+    litylink[i].addEventListener('click', function() {
+        $(document).on('click', '[data-lightbox]', lity);
+    })
+}

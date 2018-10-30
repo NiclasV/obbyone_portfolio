@@ -348,10 +348,11 @@ hr {
     opacity: 0;
     transition: .5s ease;
     background-color: #2387b7;
+    
 }
 
 .photo-wrapper:hover .photo-overlay {
-    opacity: 0.85; 
+    opacity: 0.75; 
 }
 
 .overlay-text {
