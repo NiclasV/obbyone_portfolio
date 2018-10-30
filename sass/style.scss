@@ -16,6 +16,18 @@ body {
     color: #FFFFFF;
 }
 
+.border-red {
+    border: 1px solid red;
+}
+
+.border-green {
+    border: 1px solid green;
+}
+
+.border-blue {
+    border: 1px solid blue;
+}
+
 p .logo {
     font-size: 2em;
 }
@@ -88,6 +100,9 @@ nav {
     width: 100%;
 }
 
+
+// FOOTER //
+
 footer {
     color: #FFFFFF;
     max-width: 960px;
@@ -110,11 +125,35 @@ footer .img-container {
 	display: block;
 }
 
+// ELEMENTS
+
 hr {
     width: 100%;
     background: #FFFFFF;
     margin: 25px 0 25px 0;
 }
+
+.badge {
+    padding: 5.5px;
+    font-size: 85%;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.space {
+    width: 100%;
+    height: 20px;
+}
+
+.btn {
+    font-family: 'Titillium Web', "sans-serif";
+    font-weight: 700;
+}
+
+
+// NAVIGATION 
 
 .main-navigation {
     padding: 5px 0 20px 0;
@@ -151,44 +190,23 @@ hr {
     margin-left: 10px;
 }
     
- a {
-    color: #FFFFFF;
-    text-decoration: none !important;
-
-}
-
- a:hover {
-    color: #9accff;
-    text-decoration: none !important;
-}
-
-.badge {
-    padding: 5.5px;
-    font-size: 85%;
-}
-
-.card {
-    background-color: rgba(0, 0, 0, 0.4);
-}
+// PROFILE //
 
 .profileinfo {
     display: flex;
     display: -webkit-flex;
     display: -ms-flex;
     margin-bottom: 40px;
- 
 }
 
-.img-wrapper {
+.profilephoto {
+    background-image: url("../images/profilepic.jpg");
+    background-size: cover;
+    background-position: center;
     width: 35%;
     height: 300px;
     border: 5px solid white;
     overflow: hidden; 
-}
-
-.avatar {
-    width: 100%;
-    height: auto;
 }
 
 .profilepic {
@@ -216,19 +234,10 @@ hr {
     letter-spacing: 0;
 }
 
-.space {
-    width: 100%;
-    height: 20px;
-}
-
-.post-item {
-    border: 1px solid red;
-}
-
 .contact-details {
     display: flex;
     flex-wrap: no-wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top: 25px;
     padding-left: 10px;
     padding-right: 10px;
@@ -236,6 +245,7 @@ hr {
 
 .contact-item {
     text-align: center;
+    margin-right: 40px;
 }
 
 .contact-text {
@@ -244,10 +254,8 @@ hr {
     text-transform: uppercase;
 }
 
-.btn {
-    font-family: 'Titillium Web', "sans-serif";
-    font-weight: 700;
-}
+
+// SECTION VAD JAG GÖR //
 
 .whatido {
     display: flex;
@@ -288,7 +296,6 @@ hr {
 .portfolio-item {
     width: calc((100% / 3) - 10px);
     margin: 0 5px 0 5px;
-
 }
 
 .view-buttons {
@@ -400,12 +407,23 @@ p {
     font-size: 0.95em;
 }
 
+a {
+    color: #FFFFFF;
+    text-decoration: none !important;
+
+}
+
+ a:hover {
+    color: #9accff;
+    text-decoration: none !important;
+}
+
+
 .card-header p {
     margin-bottom: 0px;
     font-size: 1.5em;
     font-weight: 500;
     font-family: 'Titillium Web', "sans-serif";
-
 }
 
 .card-body .card-title {
@@ -473,8 +491,79 @@ p {
     body {
         background-image: url("../images/bg-mobile.jpg");
     }
-    
 
+    .profileinfo {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .profilephoto {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .profiledetails {
+        width: 100%;
+        padding: 0;
+    }
+
+    .roles {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+
+    .profiledetails h1 { 
+        font-size: 4.7em;
+    }
+
+    .contact-details {
+        flex-wrap: no-wrap;
+        justify-content: space-between;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 0px;
+    }
+    
+    .contact-item {
+        text-align: center;
+        width: 25%;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+    
+    .quote {
+        font-size: 3.4em;
+        margin-top: 40px;
+    }
+    
+    footer .img-container {
+        width: 60%;
+    }
+
+    .role-item { 
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        margin-bottom: 0px;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        margin: 0 5px 0 5px;
+    }
+    .photogallery {
+        /* Prevent vertical gaps */
+      padding: 5px;
+      line-height: 0;
+      -webkit-column-count: 2;
+      -webkit-column-gap:   10px;
+      -moz-column-count:    2;
+      -moz-column-gap:      10px;
+      column-count:         2;
+      column-gap:           10px;  
+  }
 }
 
 
@@ -483,6 +572,8 @@ p {
 and (min-width: 600px)
 and (max-width: 992px) {
 
-
+    .profiledetails h1 { 
+        font-size: 5.6em;
+    }
 
 }
