@@ -270,6 +270,8 @@ createModule = {
     checkFlash: function(title) {
         if(title === true) {
             return `<span class="badge badge-light" style="margin-left: 5px; font-size: 0.8em">FLASH-AD</span>`;
+        } else {
+            return ``;
         }
     }, 
 
@@ -367,8 +369,8 @@ displayModule = {
                 for(let ad of item.ads) {
                     let flash = ad.flash;
                     ads += `<a href="${ad.url}" class="btn btn-outline-warning" target="_blank" 
-                    data-toggle="tooltip" data-placement="bottom" title="${ad.desc}" data-original-title="Tooltip on bottom">${ad.type} 
-                    ${createModule.checkFlash(flash)}</a>                    
+                    data-toggle="tooltip" data-placement="bottom" title="${ad.desc}" data-original-title="Tooltip on bottom" style="margin-bottom: 5px;">${ad.type} 
+                    ${createModule.checkFlash(flash)}</a>                
                     `
                 }
                 content += `
@@ -378,10 +380,10 @@ displayModule = {
                         <small class="form-text text-primary">${item.desc}</small>
                     </div>
                     <div class="card-body">
-                        <div class="webdesign-img-container" style="margin-bottom: 15px;">
-                        <div class="adImage" style="background-image: url('${item.image}');" class="img-fluid"></div>
-                        <div class="ads"> ${ads} </div>
+                        <div class="webdesign-img-container">
+                            <div class="adImage" style="background-image: url('${item.image}');" class="img-fluid"></div>
                         </div>
+                        <div class="ads"> ${ads} </div>
                         <p class="card-text"></p>
                     </div>
                 </div>

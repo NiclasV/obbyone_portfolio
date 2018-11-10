@@ -299,9 +299,11 @@ nav {
 .portfolio-item-4col {
     width: calc((100% / 4) - 10px);
 }
+
 .ads .btn-outline-warning {
     font-size: 0.9em;
 }
+
 .view-buttons {
     display: flex;
     justify-content: space-between;
@@ -389,7 +391,6 @@ nav {
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
-    margin-bottom: 25px;
 }
 
 /*************
@@ -592,8 +593,13 @@ a {
         margin: 0 5px 0 5px;
     }
     .portfolio-item-4col{
-        width: 47%;
+        width: 100%;
         margin: 0 5px 0 5px;
+    }
+
+    .adImage {
+        width: 60%;
+        height: 240px;
     }
 
     .photogallery {
@@ -607,9 +613,13 @@ a {
       column-count:         2;
       column-gap:           10px;  
     }
+    
     .main-navigation li{
         padding: 5px 10px 5px 10px;
 
+    }
+    .overlay-text { 
+        font-size: 1.5em;
     }
 }
 
